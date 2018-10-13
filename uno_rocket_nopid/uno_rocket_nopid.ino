@@ -24,7 +24,7 @@ void configureSensor(void)
 }
 
 void setup() {
-  Serial.begin(9600);
+  //Serial.begin(9600);
   for (uint8_t i = 0; i < 4; i++)
   {
     canard[i].attach(canard_pin[i]);
@@ -33,7 +33,7 @@ void setup() {
 
   if(!lsm.begin())
   {
-    Serial.print(F("Ooops, no LSM9DS0 detected ... Check your wiring or I2C ADDR!"));
+    //Serial.print(F("Ooops, no LSM9DS0 detected ... Check your wiring or I2C ADDR!"));
     while(1);
   }
   configureSensor();

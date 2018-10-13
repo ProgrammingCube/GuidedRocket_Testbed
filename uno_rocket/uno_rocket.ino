@@ -11,7 +11,7 @@ double Setpoint;
 double Input;
 double Output;
 
-double Kp=0, Ki=10, Kd=1;
+double Kp=0, Ki=10, Kd=0;
 
 PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
 
